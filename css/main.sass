@@ -11,29 +11,58 @@ body
     width: 100%
     padding: 0px 30px
     margin: 0px auto
-section
-    margin-top: 70px
-    &:nth-child(1)
-        margin-top: 0px
 .navbar
     .nav__content
         display: flex
         justify-content: space-between
         align-items: center
         .nav__links
-            margin-top: 10px
+            margin: 20px 0px
             ul
                 display: flex
                 li
                     list-style: none
-                    margin-left: 13px 
+                    margin-left: 13px
                     a
                         text-decoration: none
                         color: #000
+                        &:hover
+                            opacity: .7
         .nav__phone
             a
                 text-decoration: none
                 color: #000
                 font-weight: 600
-                padding: 16px 20px
+                padding: 20px 20px
                 background-color: #FCF48F
+.info
+    .info__content-slider
+        .info__slide
+            background-image: url('../img/main-bg.svg')
+            background-size: cover
+            background-repeat: no-repeat
+            padding-top: 50px
+            .info__intro
+                h1
+                    font-size: 48px
+                    font-weight: 300
+                    color: #fff
+                    margin-top: 40px
+            .info__cards
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                margin-top: 70px
+                gap: 4px
+                .info__card
+                    padding: 12px 19px
+                    background: #272727CF
+                    p
+                        color: #fff
+                        margin-top: 10px
+                        max-width: 90%
+                    svg
+                        margin-top: 30px
+                        &:hover
+                            circle
+                                fill: #FCF48F
+                                cursor: pointer
