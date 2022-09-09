@@ -149,4 +149,55 @@ body {
 }
 .law .law__content .law__cards .legal {
   background: #424242;
+}
+
+.request {
+  background: #272727;
+  padding: 50px 0px;
+}
+.request .request__content .request__intro {
+  margin: 30px 0px;
+}
+.request .request__content .request__intro h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center;
+}
+.request .request__content .request__form form {
+  display: flex;
+  flex-direction: column;
+}
+.request .request__content .request__form form input {
+  padding: 12px 13px;
+  border: 2px solid #494949;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  margin: 30px 0px;
+  font-size: 18px;
+}
+.request .request__content .request__form form input:nth-child(1) {
+  margin: 0px 0px;
+}
+.request .request__content .request__form form textarea {
+  padding: 12px 13px;
+  border: 2px solid #494949;
+  border-radius: 2px;
+  outline: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  color: #fff;
+  resize: none;
+  max-height: 100px;
+}
+.request .request__content .request__form form button {
+  margin-top: 30px;
+  padding: 12px 35px;
+  cursor: pointer;
+  background: #FCF48F;
+  font-weight: 500;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
