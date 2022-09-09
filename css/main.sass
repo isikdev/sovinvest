@@ -66,3 +66,55 @@ body
                             circle
                                 fill: #FCF48F
                                 cursor: pointer
+.law
+    margin: 70px 0px
+    .law__content
+        .law__intro
+            h1
+                font-size: 48px
+                font-weight: 300
+            hr
+                width: 90px
+                border: 2px solid #646464
+                margin: 40px 0px
+        .law__cards
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(3, 1fr)
+            grid-column-gap: 0px
+            grid-row-gap: 0px
+            .law__card-item
+                padding: 120px 30px
+                position: relative
+                h1
+                    color: #fff
+                svg
+                    display: none
+                    position: absolute
+                    bottom: 30px
+                    right: 50px
+                    circle
+                        fill: #000
+                    path
+                        fill: #FCF48F
+                &:hover
+                    background: #FCF48F
+                    color: #000
+                    cursor: pointer
+                    transition: .5s
+                    h1
+                        color: #000
+                    svg
+                        display: block
+            .corparative
+                background: #272727
+            .taxes
+                background: #353535
+            .estate
+                background: #353535
+            .bankruptcy
+                background: #525151
+            .managment
+                background: #5B5B5B
+            .legal
+                background: #424242

@@ -80,4 +80,73 @@ body {
 .info .info__content-slider .info__slide .info__cards .info__card svg:hover circle {
   fill: #FCF48F;
   cursor: pointer;
+}
+
+.law {
+  margin: 70px 0px;
+}
+.law .law__content .law__intro h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+.law .law__content .law__intro hr {
+  width: 90px;
+  border: 2px solid #646464;
+  margin: 40px 0px;
+}
+.law .law__content .law__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.law .law__content .law__cards .law__card-item {
+  padding: 120px 30px;
+  position: relative;
+}
+.law .law__content .law__cards .law__card-item h1 {
+  color: #fff;
+}
+.law .law__content .law__cards .law__card-item svg {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+.law .law__content .law__cards .law__card-item svg circle {
+  fill: #000;
+}
+.law .law__content .law__cards .law__card-item svg path {
+  fill: #FCF48F;
+}
+.law .law__content .law__cards .law__card-item:hover {
+  background: #FCF48F;
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.law .law__content .law__cards .law__card-item:hover h1 {
+  color: #000;
+}
+.law .law__content .law__cards .law__card-item:hover svg {
+  display: block;
+}
+.law .law__content .law__cards .corparative {
+  background: #272727;
+}
+.law .law__content .law__cards .taxes {
+  background: #353535;
+}
+.law .law__content .law__cards .estate {
+  background: #353535;
+}
+.law .law__content .law__cards .bankruptcy {
+  background: #525151;
+}
+.law .law__content .law__cards .managment {
+  background: #5B5B5B;
+}
+.law .law__content .law__cards .legal {
+  background: #424242;
 }/*# sourceMappingURL=main.css.map */
