@@ -120,8 +120,8 @@ body
                 background: #424242
 .request
     background: #272727
-    padding: 50px 0px
-    margin: 100px 0px
+    padding: 80px 0px
+    margin-top: 100px
     .request__content
         .request__intro
             margin: 30px 0px
@@ -227,7 +227,8 @@ body
                     text-decoration: none
                     color: #fff
                     font-weight: 500
-                    font-size: 22px
+                    font-size: 20px
+                    white-space: nowrap
                 img
                     position: absolute
                     bottom: 20px
@@ -238,3 +239,37 @@ body
                 background-color: #403F3F
             .map__tel
                 background-color: #535353
+footer
+    background-color: #1F1F1F
+    .footer__links
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 1fr
+        gap: 60px
+        justify-content: space-between
+        padding: 40px 0px
+        align-items: center
+        .footer__block-item
+            a
+                text-decoration: none
+                cursor: pointer
+                img
+                    cursor: pointer
+                    &:hover
+                        opacity: .6
+                        transition: .3s
+            nav
+                ul
+                    display: flex
+                    li
+                        list-style: none
+                        margin: 10px 10px
+                        a
+                            color: #fff
+                            &:hover
+                                color: gold
+                                transition: .3s
+        .footer__social
+            .social__ico
+                width: 30px
+                height: 30px
