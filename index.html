@@ -7,6 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sovinvest</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        [data-tooltip] {
+            position: relative;
+        }
+        
+        [data-tooltip]::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            width: 300px;
+            left: 0;
+            top: 0;
+            background: #403F3F;
+            color: #fff;
+            padding: 0.2em;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+            opacity: 0;
+            transition: 1s;
+        }
+        
+        [data-tooltip]:hover::after {
+            opacity: 1;
+            top: 2.2em;
+        }
+    </style>
 </head>
 
 <body>
@@ -217,6 +242,29 @@
                             <textarea name="comment" cols="30" rows="10" placeholder="Описание ситуации"></textarea>
                             <button type="submit">Отправить заявку</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="map__content">
+                <div class="map__iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.6657589080455!2d37.65156602848469!3d55.76430825078748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a89cf67cf6b%3A0xb9b1cd863628607e!2z0YPQuy4g0JzQsNGI0LrQvtCy0LAsIDIyLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA1MDY0!5e0!3m2!1sru!2s!4v1662738380911!5m2!1sru!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map__adress">
+                    <a href="https://goo.gl/maps/Q2NnDCdX2eHHMGjF6" data-tooltip="Google Карты" target="_blank">Москва, ул. Машкова, 22</a>
+                    <a href="https://goo.gl/maps/VXFPS94D6dpysQWL9" data-tooltip="Google Карты" target="_blank">Санкт-Петербург, Пискаревский пр-т, 25</a>
+                    <a href="https://goo.gl/maps/gxkdyc4t4u6MGXpT6" data-tooltip="Google Карты" target="_blank">Тверь, ул. Советская, 52</a>
+                </div>
+                <div class="map__telephone">
+                    <div class="map__contact map__email">
+                        <a href="mailto:info@sovinvest.org">info@sovinvest.org</a>
+                        <img src="img/mail.svg" alt="mail">
+                    </div>
+                    <div class="map__contact map__tel">
+                        <a href="tel:8(800)550-01-02">+8 (800) 550-01-02</a>
+                        <img src="img/phone.svg" alt="phone">
                     </div>
                 </div>
             </div>

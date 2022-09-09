@@ -245,4 +245,51 @@ body {
 .partners .partner__content .partner__slider .partner__slide-img img {
   width: 200px;
   height: 100%;
+}
+
+.map .map__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.map .map__content .map__adress {
+  background-color: #FCF48F;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+}
+.map .map__content .map__adress a {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  margin: 30px 0px;
+}
+.map .map__content .map__telephone {
+  display: flex;
+  flex-direction: column;
+}
+.map .map__content .map__telephone .map__contact {
+  padding: 120px 10px;
+  position: relative;
+}
+.map .map__content .map__telephone .map__contact a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+.map .map__content .map__telephone .map__contact img {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+}
+.map .map__content .map__telephone .map__email {
+  background-color: #403F3F;
+}
+.map .map__content .map__telephone .map__tel {
+  background-color: #535353;
 }/*# sourceMappingURL=main.css.map */
