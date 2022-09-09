@@ -83,7 +83,7 @@ body {
 }
 
 .law {
-  margin: 70px 0px;
+  margin: 100px 0px;
 }
 .law .law__content .law__intro h1 {
   font-size: 48px;
@@ -154,6 +154,7 @@ body {
 .request {
   background: #272727;
   padding: 50px 0px;
+  margin: 100px 0px;
 }
 .request .request__content .request__intro {
   margin: 30px 0px;
@@ -200,4 +201,48 @@ body {
   background: #FCF48F;
   font-weight: 500;
   font-size: 20px;
+}
+
+.company {
+  margin: 100px 0px;
+}
+.company .company__content .company__intro h1 {
+  font-weight: 300;
+  font-size: 48px;
+}
+.company .company__content .company__intro hr {
+  width: 120px;
+  border: 1px solid #646464;
+  margin: 30px 0px;
+}
+.company .company__content .company__intro h3 {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+.company .company__content .company__intro h3 span {
+  background: #FCF48F;
+  padding: 2px 3px;
+}
+
+.partners {
+  margin: 100px 0px;
+}
+.partners .partner__content .partner__intro h1 {
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+.partners .partner__content .partner__intro hr {
+  margin: 30px 0px;
+}
+.partners .partner__content .partner__slider {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.partners .partner__content .partner__slider .partner__slide-img img {
+  width: 200px;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
