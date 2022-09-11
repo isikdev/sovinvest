@@ -11,7 +11,7 @@ body
     scroll-behavior: smooth
     position: relative
 .container
-    max-width: 1220px
+    max-width: 1260px
     width: 100%
     padding: 0px 30px
     margin: 0px auto
@@ -98,10 +98,14 @@ body
             grid-column-gap: 0px
             grid-row-gap: 0px
             .law__card-item
-                padding: 120px 30px
+                padding: 100px 30px
                 position: relative
                 h1
                     color: #fff
+                h3
+                    color: transparent
+                    margin-top: 20px
+                    padding: 10px 20px
                 svg
                     display: none
                     position: absolute
@@ -115,9 +119,18 @@ body
                     background: #7BC3E8
                     color: #fff
                     cursor: pointer
-                    transition: .5s
+                    transition: .3s
+                    transform: scale(1.1)
+                    z-index: 8888
                     h1
                         color: #fff
+                        transform: translateY(-20px)
+                        transition: .6s
+                    h3
+                        color: #fff
+                        border: 2px solid white
+                        transform: translateX(10px)
+                        transition: .7s
                     svg
                         display: block
             .corparative
@@ -284,3 +297,118 @@ footer
             .social__ico
                 width: 30px
                 height: 30px
+                margin-left: 30px
+@media only screen and (max-width: 1260px)
+    .container
+        max-width: 960px
+        width: 100%
+        padding: 0px 30px
+        margin: 0px auto
+    .partners
+        .partner__content
+            .partner__slider
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+    footer
+        .footer__links
+            display: grid
+            grid-template-columns: 1fr
+            margin: 0px auto
+            .footer__block-item
+                margin: 20px auto
+                a
+                    margin: 0px auto
+                    img
+                        margin: 0px auto
+                nav
+                    ul
+                        margin: 0px auto
+                        flex-direction: column
+@media only screen and (max-width: 730px)
+    .container
+        width: 100%
+        padding: 0px 10px
+        margin: 0px auto
+    .btn,
+    .close
+        img
+            max-width: 60%
+    .info
+        .info__content-slider
+            .info__slide
+                .info__intro
+                    h1
+                        font-size: 22px
+                .info__cards
+                    grid-template-columns: 1fr
+    .partners
+        .partner__content
+            .partner__slider
+                grid-template-columns: repeat(2, 1fr)
+    .map
+        .map__content
+            grid-template-columns: 1fr
+            .map__telephone
+                .map__contact
+                    padding: 120px 60px
+    .navbar
+        .nav__content
+            .nav__links
+                ul
+                    display: flex
+                    flex-direction: column
+                    li
+                        color: transparent
+                        text-align: left
+                        margin-top: 60px
+                        a
+                            font-size: 22px
+                            margin: 10px auto
+            .nav__phone
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 100%
+                position: relative
+                a
+                    font-size: 12px
+                    padding: 25px 20px
+    .law
+        .law__content
+            .law__cards
+                grid-template-columns: 1fr
+                .law__card-item
+                    &:hover
+                        transform: scale(1)
+    .partners
+        .partner__content
+            .partner__slider
+                grid-template-columns: 1fr
+                .partner__slide-img
+                    margin: 20px auto
+    .menu
+        min-height: 100vh
+        width: 60%
+        position: fixed
+        top: -120%
+        left: 0
+        z-index: 2000
+        background-color: #7BC3E8
+        padding: 15px 10px
+        transition: .5s
+        display: block
+        .close
+            position: absolute
+            right: 40px
+            top: 20px
+            background: transparent
+            border: 0px none
+    .menu-active
+        top: 0
+    .company
+        .company__content
+            .company__intro
+                h1
+                    font-size: 22px
+                h3
+                    font-size: 20px
