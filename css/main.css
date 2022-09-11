@@ -67,6 +67,10 @@ body {
   background-color: #7BC3E8;
 }
 
+.btn {
+  display: none;
+}
+
 .info .info__content-slider .info__slide {
   background-size: cover;
   background-repeat: no-repeat;
@@ -533,6 +537,10 @@ footer .footer__links .footer__social .social__ico {
     margin: 0px auto;
   }
 
+  .btn,
+.close {
+    display: block;
+  }
   .btn img,
 .close img {
     max-width: 60%;
