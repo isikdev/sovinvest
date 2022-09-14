@@ -43,6 +43,8 @@ body
                 background-color: #7BC3E8
 .btn
     display: none
+    background: transparent
+    border: 0px none
 .info
     .info__content-slider
         .info__slide
@@ -55,6 +57,12 @@ body
                     font-weight: 300
                     color: #fff
                     margin-top: 40px
+                p
+                    font-size: 26px
+                    font-weight: 500
+                    color: #fff
+                    margin-top: 15px
+                    max-width: 70%
             .info__cards
                 display: grid
                 grid-template-columns: 1fr 1fr 1fr
@@ -111,6 +119,9 @@ body
                     color: transparent
                     margin-top: 20px
                     padding: 10px 20px
+                a
+                    color: transparent
+                    cursor: pointer
                 svg
                     display: none
                     position: absolute
@@ -123,7 +134,7 @@ body
                 &:hover
                     background: #7BC3E8
                     color: #fff
-                    cursor: pointer
+                    cursor: text
                     transition: .3s
                     transform: scale(1.1)
                     z-index: 8888
@@ -131,6 +142,10 @@ body
                         color: #fff
                         transform: translateY(-20px)
                         transition: .6s
+                    a
+                        color: #fff
+                        transform: translateY(-25px)
+                        transition: .3s
                     h3
                         color: #fff
                         border: 2px solid white
@@ -229,6 +244,10 @@ body
                 img
                     width: 200px
                     height: 100%
+                &:hover
+                    opacity: .6
+                    cursor: pointer
+                    transition: .3s
 .map
     .map__content
         display: grid
@@ -345,6 +364,8 @@ footer
                 .info__intro
                     h1
                         font-size: 22px
+                    p
+                        font-size: 14px
                 .info__cards
                     grid-template-columns: 1fr
     .partners
